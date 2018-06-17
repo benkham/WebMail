@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
       'subject': new FormControl('',
         [Validators.required, Validators.minLength(10), Validators.maxLength(100)]),
       'body': new FormControl('',
-        [Validators.required, Validators.minLength(10), Validators.maxLength(100)])
+        [Validators.required, Validators.minLength(10), Validators.maxLength(500)])
     });
   }
 
