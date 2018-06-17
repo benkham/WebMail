@@ -24,3 +24,4 @@ Swagger UI is accessible from `http://localhost:<PORT>/swagger`.
 
 Front-end: Angular 5+, Back-end: ASP.Net Core 2.0
 
+![alt text](https://github.com/benkham/WebMail/blob/master/src/WebMail/Webmail.png)
