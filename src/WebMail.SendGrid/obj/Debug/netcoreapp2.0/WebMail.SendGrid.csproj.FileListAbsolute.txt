@@ -1,0 +1,12 @@
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\bin\Debug\netcoreapp2.0\WebMail.SendGrid.deps.json
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\bin\Debug\netcoreapp2.0\WebMail.SendGrid.dll
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\bin\Debug\netcoreapp2.0\WebMail.SendGrid.pdb
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\bin\Debug\netcoreapp2.0\WebMail.Core.dll
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\bin\Debug\netcoreapp2.0\WebMail.Core.pdb
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\obj\Debug\netcoreapp2.0\WebMail.SendGrid.csprojAssemblyReference.cache
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\obj\Debug\netcoreapp2.0\WebMail.SendGrid.csproj.CoreCompileInputs.cache
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\obj\Debug\netcoreapp2.0\WebMail.SendGrid.AssemblyInfoInputs.cache
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\obj\Debug\netcoreapp2.0\WebMail.SendGrid.AssemblyInfo.cs
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\obj\Debug\netcoreapp2.0\WebMail.SendGrid.csproj.CopyComplete
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\obj\Debug\netcoreapp2.0\WebMail.SendGrid.dll
+C:\BEN\PROJECTS\WebMail\WebMail.SendGrid\obj\Debug\netcoreapp2.0\WebMail.SendGrid.pdb

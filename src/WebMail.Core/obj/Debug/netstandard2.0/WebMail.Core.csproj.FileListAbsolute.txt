@@ -1,0 +1,9 @@
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\bin\Debug\netstandard2.0\WebMail.Core.deps.json
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\bin\Debug\netstandard2.0\WebMail.Core.dll
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\bin\Debug\netstandard2.0\WebMail.Core.pdb
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\obj\Debug\netstandard2.0\WebMail.Core.csprojAssemblyReference.cache
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\obj\Debug\netstandard2.0\WebMail.Core.csproj.CoreCompileInputs.cache
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\obj\Debug\netstandard2.0\WebMail.Core.AssemblyInfoInputs.cache
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\obj\Debug\netstandard2.0\WebMail.Core.AssemblyInfo.cs
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\obj\Debug\netstandard2.0\WebMail.Core.dll
+C:\BEN\PROJECTS\WebMail\src\WebMail.Core\obj\Debug\netstandard2.0\WebMail.Core.pdb

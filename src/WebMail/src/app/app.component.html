@@ -1,0 +1,126 @@
+<div class="py-3 text-center">
+  <h2>WebMail</h2>
+  <p class="lead">To, Cc and Bcc can be one ore multiple emails seperated by semicolon (;).</p>
+</div>
+
+<div class="row">
+  <div class="col-md-4 order-md-2 mb-4">
+    <h4 class="d-flex justify-content-between align-items-center mb-3">
+      <span class="text-muted">Email Providers</span>
+      <span class="badge badge-secondary badge-pill"></span>
+    </h4>
+    <p *ngIf="!senders">
+      <em>Loading...</em>
+    </p>
+    <ul *ngIf="senders" class="list-group mb-3">
+      <li *ngFor="let sender of senders;let i = index" [attr.data-index]="i" class="list-group-item d-flex justify-content-between lh-condensed">
+        <div>
+          <h6 class="my-0">{{i+1}}. {{ sender }}</h6>
+          <span class="text-muted"></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-md-8 order-md-1">
+    <h4 class="mb-3">Compose Email</h4>
+    <div *ngIf="response" class="alert alert-success" role="alert">
+      {{response}}
+    </div>
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+      {{error}}
+    </div>
+
+    <form [formGroup]="emailForm">
+      <div class="form-group row">
+        <label for="toAddresses" class="col-sm-2 col-form-label">To</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="toAddresses" formControlName="toAddresses">
+          <div *ngIf="toAddresses.invalid && (toAddresses.dirty || toAddresses.touched)" class="form-text text-danger">
+            <div *ngIf="toAddresses.errors.required">
+              To is required.
+            </div>
+            <div *ngIf="toAddresses.errors.minlength">
+              To must be at least 10 characters long.
+            </div>
+            <div *ngIf="toAddresses.errors.maxlength">
+              To must be less than 200 characters long.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="ccEmails" class="col-sm-2 col-form-label">Cc
+          <small class="text-muted">(Optional)</small>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="ccEmails" formControlName="ccAddresses">
+          <div *ngIf="ccAddresses.invalid && (ccAddresses.dirty || ccAddresses.touched)" class="form-text text-danger">
+            <div *ngIf="ccAddresses.errors.maxlength">
+              Cc must be less than 200 characters long.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="bccEmails" class="col-sm-2 col-form-label">Bcc
+          <small class="text-muted">(Optional)</small>
+        </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="bccEmails" formControlName="bccAddresses">
+          <div *ngIf="bccAddresses.invalid && (bccAddresses.dirty || bccAddresses.touched)" class="form-text text-danger">
+            <div *ngIf="bccAddresses.errors.maxlength">
+              Bcc must be less than 200 characters long.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="subject" class="col-sm-2 col-form-label">Subject</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="subject" formControlName="subject">
+          <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="form-text text-danger">
+            <div *ngIf="subject.errors.required">
+              Subject is required.
+            </div>
+            <div *ngIf="subject.errors.minlength">
+              Subject must be at least 10 characters long.
+            </div>
+            <div *ngIf="subject.errors.maxlength">
+              Subject must be less than 100 characters long.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="message" class="col-sm-2 col-form-label">Message</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="message" rows="5" formControlName="body"></textarea>
+          <div *ngIf="body.invalid && (body.dirty || body.touched)" class="form-text text-danger">
+            <div *ngIf="body.errors.required">
+              Message is required.
+            </div>
+            <div *ngIf="body.errors.minlength">
+              Message must be at least 10 characters long.
+            </div>
+            <div *ngIf="body.errors.maxlength">
+              Message must be less than 500 characters long.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">&nbsp;</div>
+        <div class="col-sm-10">
+          <button class="btn btn-warning" type="button" [disabled]="!emailForm.valid" (click)="onClickEmail()">Send Email</button>
+          <button class="btn btn-outline-secondary" type="reset" (click)="onClickReset()">Clear</button>
+        </div>
+      </div>
+      <br>
+    </form>
+  </div>
+</div>
